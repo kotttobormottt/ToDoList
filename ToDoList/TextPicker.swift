@@ -28,5 +28,4 @@ class TextPicker {
         
         viewController.present(alertController, animated: true)
     }
-    
 }

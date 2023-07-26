@@ -47,7 +47,6 @@ class ListController: UITableViewController {
         return cell
     }
     
-    
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let action = UIContextualAction(style: .normal, title: "Rename") { _, _, completion in
@@ -78,5 +77,4 @@ class ListController: UITableViewController {
         model.toggleItem(atIndex: indexPath.row)
         tableView.reloadRows(at: [indexPath], with: .automatic)
     }
-    
 }
